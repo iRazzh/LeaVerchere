@@ -1,0 +1,43 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.all{
+    display: flex;
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.infos{
+    text-align: end;
+    margin-right: 2rem;
+}
+.infos-name{
+    margin-bottom: 3rem;
+}
+.name{
+    font-size: 2rem;
+    margin: 0;
+}
+.infos-redirection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.link a, .link a, .link a, .link a{
+    text-decoration: underline;
+    color: black;
+}
+.photo{
+    margin-left: 4rem;
+}
+.photo-profil{
+    border-radius: 50%;
+    object-fit: cover;
+}
