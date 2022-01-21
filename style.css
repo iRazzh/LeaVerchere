@@ -52,7 +52,30 @@ body{
 }
 
 /* ABOUT PAGE */
-
+.infos-about{
+    display: flex;
+    align-items: center;
+    margin: 0 5rem;
+    justify-content: space-between;
+}
+.infos-about a{
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+}
+.infos-about a:hover{
+    text-decoration: underline;
+}
+.infos-about .infos-logo, .infos-about .infos-job{
+    font-size: 20px;
+}
+.infos-about .infos-job{
+    margin-left: 2rem;
+}
+.info-together{
+    display: flex;
+    align-items: center;
+}
 .about{
     display: flex;
     width: 1200px;
@@ -63,17 +86,18 @@ body{
     margin: 3.5rem 3.5rem 1rem;
 }
 .text {
-    background-color: rgb(240, 232, 232);
-    height: 530px;
     transform: translateX(100px) translateY(50px);
 }
 .text-title{
     font-size: 40px;
     color: #2C4001;
 }
-.text-description{
+.text-description, .text-description-2{
     font-size: 20px;
     text-align: justify;
+}
+.text-description-2{
+    margin-bottom: 2.5rem;
 }
 .text-description:nth-child(2){
     margin-bottom: 3rem;
@@ -88,6 +112,10 @@ body{
 .hobbies-about video{
     width: 33%;
 }
+.photo-profil-about{
+    width: 100%;
+    object-fit: cover;
+}
 .container-hobbies-about{
     width: 50%;
     padding: 20px 40px;
@@ -99,16 +127,74 @@ body{
     margin: auto;
 }
 .allForma{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
 }
 .allForma section{
-    width: 45%;
-    background-color: rgb(240, 232, 232);
+
     margin: 1rem;
+}
+.forma-display-stage, .forma-display-stage-right{
+    position: relative;
 }
 .caron{
     font-size: 40px;
+    position: absolute;
+    right: 30px;
+    top: 45%;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+.caron:hover{
+    background-color: #72a701;
+}
+.caronRight{
+    font-size: 40px;
+    position: absolute;
+    left: 30px;
+    top: 45%;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.caronRight:hover{
+    background-color: #72a701;
+}
+.forma{
+    display: flex;
+    justify-content: space-between;
+}
+.forma-display-stage, .forma-display-stage-right, .forma-text-stage {
+    width: 50%;
+    background-color: rgb(240, 232, 232);
+}
+.forma-text-diplome{
+    font-size: 21px;
+}
+.forma-text-date{
+    font-style: italic;
+}
+.master2{
+    margin: 1rem 0 0;
+}
+.master2-and{
+    margin: 0;
+}
+.forma-text-stage{
+    display: none;
+}
+.forma.align-right{
+    justify-content: end;
+}
+.forma-display-stage.active > .caron{
+    transform: rotate(90deg);
+}
+.forma-display-stage-right.active > .caronRight{
+    transform: rotate(270deg);
 }
