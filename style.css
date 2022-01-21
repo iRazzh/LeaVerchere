@@ -17,10 +17,19 @@ body{
 }
 .infos-name{
     margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.infos-name h1, .infos-name span{
+    width: 100%;
+}
+.main-job{
+    margin-bottom: 0.5rem;
+    font-size: 21px;
 }
 .name{
     font-size: 2rem;
-    margin: 0;
+    margin: 0 0 40px;
 }
 .infos-redirection{
     display: flex;
@@ -40,4 +49,66 @@ body{
 .photo-profil{
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* ABOUT PAGE */
+
+.about{
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+}
+.container-about{
+    margin: 3.5rem 3.5rem 1rem;
+}
+.text {
+    background-color: rgb(240, 232, 232);
+    height: 530px;
+    transform: translateX(100px) translateY(50px);
+}
+.text-title{
+    font-size: 40px;
+    color: #2C4001;
+}
+.text-description{
+    font-size: 20px;
+    text-align: justify;
+}
+.text-description:nth-child(2){
+    margin-bottom: 3rem;
+}
+.hobbies-about{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8rem auto 2rem;
+    justify-content: space-evenly;
+}
+.hobbies-about video{
+    width: 33%;
+}
+.container-hobbies-about{
+    width: 50%;
+    padding: 20px 40px;
+    background-color: rgb(240, 232, 232);
+    transform: translateY(-60px);
+}
+.experiences{
+    width: 1200px;
+    margin: auto;
+}
+.allForma{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.allForma section{
+    width: 45%;
+    background-color: rgb(240, 232, 232);
+    margin: 1rem;
+}
+.caron{
+    font-size: 40px;
 }
