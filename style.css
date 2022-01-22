@@ -194,7 +194,63 @@ body{
 }
 .forma-display-stage.active > .caron{
     transform: rotate(90deg);
+    transition: 1s;
 }
 .forma-display-stage-right.active > .caronRight{
     transform: rotate(270deg);
+    transition: 1s;
+}
+.more{
+    font-style: italic;
+}
+.forma-text{
+    font-size: 18px;
+}
+h2.forma-text{
+    font-size: 21px;
+    color: #2C4001;
+}
+
+/* PROJECTS PAGE */ 
+
+hr{
+    margin: 4rem 0;
+}
+.projects{
+    width: 1024px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+}
+.projects-logo{
+    margin-bottom: 2rem;
+    width: 400px;
+    object-fit: cover;
+}
+.content video, .second-content video{
+    width: 30%;
+    height: 450px;
+}
+.projects-content-text{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+.projects-content-text img{
+    width: 40%;
+}
+.projects-content{
+    margin: 0 2rem;
+}
+.second-content video{
+    height: 350px;
+}
+.content-valdeluce, .content-initsport, .content-jobdating{
+    display: flex;
+    justify-content: space-between;
+}
+.content-valdeluce img, .content-initsport img, .content-jobdating img{
+    width: 30%;
+    height: 450px;
+    object-fit: cover;
 }
