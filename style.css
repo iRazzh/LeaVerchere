@@ -132,7 +132,7 @@ body{
 }
 .text-title{
     font-size: 40px;
-    color: #2C4001;
+    color: #8CA653;
 }
 .text-description, .text-description-2{
     font-size: 20px;
@@ -173,12 +173,24 @@ body{
 .photo-about{
     margin-left: 1rem;
 }
-.container-hobbies-about{
+.artiste{
+    width: 35%;
+    position: absolute;
+    right: 120px;
+    top: 0;
+}
+.artiste h1,.artiste p{
+    color: #8CA653
+}
+.voyage{
     width: 35%;
     padding: 20px 40px;
     position: absolute;
-    bottom: 0;
-    left: 60px;
+    bottom: 70px;
+    left: 50px;
+}
+.voyage p{
+    color: #2C4001
 }
 .experiences{
     width: 1024px;
@@ -316,6 +328,9 @@ h2.forma-text{
 .content-valdeluce, .content-initsport, .content-jobdating{
     display: flex;
     justify-content: space-between;
+}
+.logovaldeluce{
+    width: 200px;
 }
 .content-valdeluce img, .content-initsport img, .content-jobdating img{
     width: 30%;
