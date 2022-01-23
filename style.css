@@ -73,7 +73,10 @@ body{
     font-style: italic;
     color: #6e6e6e
 }
-
+.contact-logo-accueil{
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
 /* ABOUT PAGE */
 .header-logo{
     margin-top: 1rem;
@@ -276,6 +279,7 @@ h2.forma-text{
 
 .banniere-project{
     margin-bottom: 5rem;
+    width: 100%;
 }
 .second-text{
     margin-bottom: 5rem;
@@ -318,7 +322,28 @@ h2.forma-text{
     height: 450px;
     object-fit: cover;
 }
-
+.moove-position{
+    object-position: 83% 17%;
+}
+.jobdatingtitle{
+    font-size: 28px;
+    color: #2C4001;
+}
+.moove-position2{
+    object-position: bottom;
+}
+.moove-position3{
+    object-position: 15%;
+}
+.moove-position4{
+    object-position: 20%;
+}
+.goal{
+    text-decoration: underline;
+}
+.opportunity{
+    font-style: italic;
+}
 /* CONTACT PAGE */
 .contact{
     margin-top: 4rem;
@@ -332,10 +357,16 @@ h2.forma-text{
 .contact-logo{
     margin-left: 5rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
 }
 .fa-linkedin, .fa-envelope{
     font-size: 40px;
     color: #2C4001;
+}
+.contact-text{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
 }
