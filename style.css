@@ -1,3 +1,12 @@
+@font-face{
+    font-family: "Century Gothic";
+    src: url("font/SansSerifBldFLFCond.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2, h3, p, span, a{
+    font-family: "Century Gothic", sans-serif;
+}
 body{
     box-sizing: border-box;
     padding: 0;
@@ -32,11 +41,11 @@ body{
 }
 .main-job{
     margin-bottom: 0.5rem;
-    font-size: 23px;
+    font-size: 21px;
     font-style: italic;
 }
 .name{
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0 0 40px;
 }
 .infos-redirection{
@@ -62,6 +71,7 @@ body{
 .second-job{
     font-size: 14px;
     font-style: italic;
+    color: #6e6e6e
 }
 
 /* ABOUT PAGE */
@@ -112,6 +122,7 @@ body{
     width: 1024px;
     margin: auto;
     margin-top: 5rem;
+    align-items: center;
 }
 .container-about{
     margin: 3.5rem 3.5rem 1rem;
@@ -160,11 +171,11 @@ body{
     margin-left: 1rem;
 }
 .container-hobbies-about{
-    width: 30%;
+    width: 35%;
     padding: 20px 40px;
     position: absolute;
     bottom: 0;
-    left: 90px;
+    left: 60px;
 }
 .experiences{
     width: 1024px;
@@ -222,6 +233,7 @@ body{
 .forma-display-stage, .forma-display-stage-right, .forma-text-stage {
     width: 50%;
     background-color: rgb(240, 232, 232);
+    padding: 10px;
 }
 .forma-text-diplome{
     font-size: 21px;
@@ -262,8 +274,11 @@ h2.forma-text{
 
 /* PROJECTS PAGE */ 
 
-hr{
-    margin: 4rem 0;
+.banniere-project{
+    margin-bottom: 5rem;
+}
+.second-text{
+    margin-bottom: 5rem;
 }
 .projects{
     width: 1024px;
@@ -273,7 +288,7 @@ hr{
 }
 .projects-logo{
     margin-bottom: 2rem;
-    width: 400px;
+    width: 300px;
     object-fit: cover;
 }
 .content video, .second-content video{
@@ -302,4 +317,25 @@ hr{
     width: 30%;
     height: 450px;
     object-fit: cover;
+}
+
+/* CONTACT PAGE */
+.contact{
+    margin-top: 4rem;
+}
+.contact-section{
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.contact-logo{
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.fa-linkedin, .fa-envelope{
+    font-size: 40px;
+    color: #2C4001;
 }
