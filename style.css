@@ -5,11 +5,18 @@ body{
 }
 .all{
     display: flex;
-    width: 1200px;
+    width: 1024px;
     height: 100vh;
     margin: auto;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.banniere-index{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: -1;
 }
 .infos{
     text-align: end;
@@ -25,7 +32,8 @@ body{
 }
 .main-job{
     margin-bottom: 0.5rem;
-    font-size: 21px;
+    font-size: 23px;
+    font-style: italic;
 }
 .name{
     font-size: 2rem;
@@ -44,19 +52,31 @@ body{
     color: black;
 }
 .photo{
-    margin-left: 4rem;
+    margin: 0 2rem;
 }
 .photo-profil{
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
+.second-job{
+    font-size: 14px;
+    font-style: italic;
+}
 
 /* ABOUT PAGE */
+.header-logo{
+    margin-top: 1rem;
+}
+.experiences-title{
+    margin: 2rem 0 0 1rem;
+    font-size: 40px;
+    color: #2C4001;
+}
 .infos-about{
     display: flex;
     align-items: center;
     margin: 0 5rem;
-    justify-content: space-between;
 }
 .infos-about a{
     text-decoration: none;
@@ -75,18 +95,26 @@ body{
 .info-together{
     display: flex;
     align-items: center;
+    width: 50%;
+}
+.info-nav-together{
+    width: 50%;
+    text-align: end;
+}
+.info-together a{
+    width: 10%;
+}
+.info-logo-lea{
+    width: 100%;
 }
 .about{
     display: flex;
-    width: 1200px;
+    width: 1024px;
     margin: auto;
     margin-top: 5rem;
 }
 .container-about{
     margin: 3.5rem 3.5rem 1rem;
-}
-.text {
-    transform: translateX(100px) translateY(50px);
 }
 .text-title{
     font-size: 40px;
@@ -104,27 +132,46 @@ body{
 }
 .hobbies-about{
     width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
     margin: 8rem auto 2rem;
     justify-content: space-evenly;
+    position: relative;
+}
+.hobbies-about img{
+    width: 100%;
 }
 .hobbies-about video{
     width: 33%;
+}
+.firstVideo{
+    position: absolute;
+    top: 80px;
+    left: 110px;
+}
+.secondVideo{
+    position: absolute;
+    top: 350px;
+    right: 60px;
 }
 .photo-profil-about{
     width: 100%;
     object-fit: cover;
 }
+.photo-about{
+    margin-left: 1rem;
+}
 .container-hobbies-about{
-    width: 50%;
+    width: 30%;
     padding: 20px 40px;
-    background-color: rgb(240, 232, 232);
-    transform: translateY(-60px);
+    position: absolute;
+    bottom: 0;
+    left: 90px;
 }
 .experiences{
-    width: 1200px;
+    width: 1024px;
     margin: auto;
+}
+.img-experiences{
+    width: 100%;
 }
 .allForma{
     text-align: center;
@@ -147,9 +194,10 @@ body{
     width: 30px;
     transform: rotate(270deg);
     cursor: pointer;
+    color: #2C4001;
 }
 .caron:hover{
-    background-color: #72a701;
+    background-color: #8CA653;
 }
 .caronRight{
     font-size: 40px;
@@ -162,9 +210,10 @@ body{
     width: 30px;
     transform: rotate(90deg);
     cursor: pointer;
+    color: #2C4001;
 }
 .caronRight:hover{
-    background-color: #72a701;
+    background-color: #8CA653;
 }
 .forma{
     display: flex;
